@@ -17,5 +17,5 @@ def save(text):
 @main.command()
 def list():
     if not STORE.exists(): console.print('Empty'); return
-    for i,t in enumerate(json.loads(STORE.read_text())): console.print(f'{i}: {t}')
+    for i,t in enumerate(json.loads(STORE.read_text())): console.print(f'{i}: {t}', markup=False)
 if __name__=='__main__': main()

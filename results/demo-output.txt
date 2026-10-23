@@ -1,0 +1,6 @@
+$ python3 -m clipvault.cli save hello world
+Saved
+[exit 0]
+$ python3 -m clipvault.cli list
+0: hello world
+[exit 0]
